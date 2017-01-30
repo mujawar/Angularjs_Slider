@@ -26,11 +26,11 @@
         <div ng-if="slides.length > 1 ">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1" ></li>
-                <li data-target="#myCarousel" data-slide-to="2" ></li>
-                <li data-target="#myCarousel" data-slide-to="3" ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
-            <div  id="test" class="carousel-inner" role="listbox">
+            <div id="test" class="carousel-inner" role="listbox">
                 <div class="item" ng-class="{active:!$index}"
                      ng-repeat="image in slides track by $index">
                     <img ng-src="{{image.img}}" style="width: 100%; height: 82%;">
